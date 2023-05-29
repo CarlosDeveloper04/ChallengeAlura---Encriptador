@@ -3,24 +3,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@300&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="funciones.js"></script>
-    <title>Challenge Alura Encriptador</title>
+    <title>Encriptador</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Encriptador</h1>
+    <header>
+        <section >
+            <h1 class="titulo">Encriptador</h1>
+        </section>
+    </header>
+    
+    <main>
+        <section class="container">
+           
+            <textarea cols="30" rows="10" class="textarea" placeholder=" Ingresa texto a encriptar"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
 
-        <input column="30" class="texto" type="text" placeholder="Ingresa texto a encriptar">
+            </div>
+           
+        </section>
+        <section>
+            <textarea name="mensaje" class="textarea" cols="20" rows="10"  placeholder="Texto encriptado"></textarea>
+            <div>
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </section>
 
-        <button class="boton">Encriptar</button>
-        <button class="boton">Desencriptar</button>
+    </main>  
+        
 
-        <input class="texto" type="text" placeholder="texto encriptado">
+        
 
-        <button class="boton">Copiar</button>
-
-    </div>
+    
 
     
 
