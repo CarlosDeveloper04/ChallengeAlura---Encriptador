@@ -11,6 +11,13 @@ const mensaje = document.querySelector(".textarea-msje");
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
+    textArea.value = "";
+}
+
+function btnDesencriptar(){
+    const textoDesencriptado = desencriptar(mensaje.value)
+    textArea.value = textoDesencriptado
+    mensaje.value = "";
 }
 
 
@@ -25,6 +32,19 @@ function encriptar(stringEncriptado){
         }
     }
     return stringEncriptado
+}
+
+function desencriptar(stringDesencriptado){
+    
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
+    stringDesencriptado= stringDesencriptado.toLowerCase()
+
+    for(i = 0; i < matrizCodigo.length; i++){
+        if(stringDesencriptado.includes(matrizCodigo[i][1])){
+            stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
+        }
+    }
+    return stringDesencriptado
 }
 
 
