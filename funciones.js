@@ -2,6 +2,7 @@
 const textArea = document.querySelector(".textarea");
 const mensaje = document.querySelector(".textarea-msje");
 
+
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
 //La letra "a" es convertida para "ai"
@@ -18,6 +19,13 @@ function btnDesencriptar(){
     const textoDesencriptado = desencriptar(mensaje.value)
     textArea.value = textoDesencriptado
     mensaje.value = "";
+}
+
+function btnCopiar(textoCopiado){
+    const copiar = document.querySelector(".textarea-msje");
+    copiar.select();
+    document.execCommand('copy');
+   
 }
 
 
