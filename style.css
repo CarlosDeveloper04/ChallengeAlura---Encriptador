@@ -6,21 +6,10 @@
     line-height: 100%;
 }
 
-header{
-    display: block;
-    width: 100%;
-    text-align: center;
-    background-color: aquamarine;
-    padding-top: 10px;
-    margin-left: 10px;
-}
 
-h1{
-    
-    font-family: 'inter';
-    font-size: 32px;
+header h1{
+    text-align: center;
     font-weight: bold;
-    width: 100%;
 
 }
 
@@ -29,13 +18,19 @@ main{
     margin-bottom: 50px;
     margin-left: 80px;
     width: 100%;
-    background-color: aquamarine;
+    
 }
 
-.textarea{
-    border: 1px solid black;
+.textarea, .textarea-msje{
+    background-color: rgb(230, 233, 236);
+    border: none;
     color: rgb(23, 3, 94);
     text-transform: lowercase;
+    border-radius: 10px;
+}
+
+.textarea, .textarea-msje:focus{
+    outline: none;
 }
 
 ::placeholder{ 
@@ -43,25 +38,13 @@ main{
     
 }
 
-.textarea:focus{
-    outline: none;
-}
-
-.textarea-msje:focus{
-    outline: none;
-}
-
-.textarea-msje{
-    border: 1px solid black;
-    color: rgb(23, 3, 94);
-    text-transform: lowercase;
-}
-
 .botones{
     display: flex;
-    margin-top: 18px;
+    margin-top: 10px;
+    justify-content: space-around;
 
 }
+
 
 .btn-encriptar{
     background-color: rgb(22, 70, 109);
@@ -72,18 +55,22 @@ main{
     cursor: pointer;
     height: 67px;
     width: 200px;
-
+    opacity: 0.6;
+    box-shadow: 0px 12px 15px #666666;
+    
 }
 
 .btn-desencriptar{
     background-color: aliceblue;
-    border: 1px solid aquamarine;
+    border: 1px solid rgb(22, 70, 109);
     border-radius: 24px;
     font-weight: bold;
     color: rgb(72, 75, 74);
     cursor: pointer;
     height: 67px;
     width: 200px;
+    opacity: 0.6;
+    box-shadow: 0px 12px 15px #666666;
 
 }
 
@@ -98,9 +85,14 @@ main{
     margin-top: 10px;
     position: absolute;
     width: 200px;
+    opacity: 0.6;
+    box-shadow: 0px 12px 15px #666666;
 
 }
 
 .btn:active{
-    background-color: aqua;
+    background-color: rgb(175, 11, 175);
 }
+
+
+
